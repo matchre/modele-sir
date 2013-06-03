@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Modélisation épidémie</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script src="jcanvas.js">
+	</script>
+<script src="epidemie.js"></script>
+</head>
+<body>
+<canvas id="canvas1" width="500" height="310" style="border : 1px solid black">
+	
+ </canvas>
+ 
+<section>
+	<fieldset>
+		<legend>S0</legend>
+		<div id="slider1" class="slider"></div>
+			
+		<span class="valeur" id="valeur1"></span>
+	</fieldset>
+	<fieldset>
+		<legend>I0</legend>
+		<div id="slider2" class="slider"></div>
+		<span class="valeur" id="valeur2"></span>
+	</fieldset>
+	<fieldset>
+		<legend>C0</legend>
+		<div id="slider3" class="slider"></div>
+		<span class="valeur" id="valeur3"></span>
+	</fieldset>
+</section>
+<section>
+	<fieldset>
+		<legend>l</legend>
+		<div id="slider4" class="slider"></div>
+		<span class="valeur" id="valeur4"></span>
+	</fieldset>
+	<fieldset>
+		<legend>b</legend>
+		<div id="slider5" class="slider"></div>
+		<span class="valeur" id="valeur5"></span>
+	</fieldset>
+	<fieldset>
+		<legend>n</legend>
+		<div id="slider6" class="slider"></div>
+		<span class="valeur" id="valeur6"></span>
+	</fieldset>
+</section>
+<section>
+	<fieldset>
+		<legend>µ</legend>
+		<div id="slider7" class="slider"></div>
+		<span class="valeur" id="valeur7"></span>
+	</fieldset>
+</section>
+<fieldset>
+	<legend>Choississez les courbes à afficher</legend>
+		<input type="button"  id="valid" value="Lancer la simulation"></input>
+		<input type="radio"  name="methode"id="SIRsansµ" checked="checked" value="1">S,I,R sans µ</input>
+		<input type="radio" name="methode" id="SIRavecµ" value="2">S,I,R avec µ</input>
+		<input type="radio" name="methode" id="SIRC" value="3">S,I,R et C</input>
+	</fieldset>
+ 
+</body>
+</html>

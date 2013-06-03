@@ -1,0 +1,48 @@
+{
+    "name": "Grain 3.0",
+    "width": "800px",
+    "height": "600px",
+    "link": "http://interstices.info/modele-sir",
+    "comment": "---une ligne de description du grain--",
+    "links": [
+        {
+            "title": "Document qui document ce grain",
+            "uri": "http://interstices.info/modele-sir"
+        }
+    ],
+    "authors": [
+         {
+            "name": "Ben Abdallah, Hamdi",
+            "email": "hamdi.benabd@gmail.com",
+            "role": "auteur",
+            "comment": "version initiale en Java"
+        },
+        {
+            "name": "Etienne, Benjamin",
+            "mail" : "benjamin.etienne00@gmail.com",
+            "role": "auteur",
+            "comment": "version HTLM5/JS"
+        },
+        {
+            "name": "Rechenmann, François",
+            "role": "concepteur",
+            "comment": "auteur scientifique qui a proposé le grain"
+        },
+        {
+            "name": "www.centralelilleprojets.fr",
+            "role": "producteur"
+        }
+    ],
+    "licenses": [
+        {
+            "name": "CC BY-NC-SA",
+            "uri": "http://creativecommons.org/licenses/by-nc-sa/3.0/fr",
+            "comment": "s'applique aux documents"
+        },
+        {
+            "name": "CeCILL-C",
+            "uri": "http://www.cecill.info/licences/Licence_CeCILL-C_V1-fr.html",
+            "comment": "s'applique au code source"
+        }
+    ]
+}
