@@ -1,6 +1,8 @@
 $(function() {  
   
-	
+	$("#slider3").hide();$("#valeur3").hide();$("#valeur6").hide();$("#valeur7").hide();
+				$("#slider6").hide();
+				$("#slider7").hide();
    var slider1 = $("#slider1"),  
         tooltip1 = $('#valeur1'), 
 		slider2 = $("#slider2"),  
@@ -19,7 +21,7 @@ $(function() {
     slider1.slider({  				//S
         range: "min",  
         min: 0.01,  
-        value: 0.35,  
+        value: 0.01,  
 		max : 1,
 		step : 0.01,
 		
@@ -60,7 +62,7 @@ $(function() {
 	 slider2.slider({  				//I
         range: "min",  
         min: 0.01,  
-        value: 0.35,  
+        value: 0.01,  
 		max : 1,
 		step : 0.01, 
 		
@@ -225,8 +227,8 @@ $(function() {
 		beta=slider5.slider("value");
 		nu=slider6.slider("value");
 		mu=slider7.slider("value");
-		r=0;
-		p=1;
+		
+		
 		ptsS = new Array();
 			ptsI = new Array();
 			ptsC = new Array();
@@ -246,7 +248,7 @@ $(function() {
 		nu=slider6.slider("value");
 		mu=slider7.slider("value");
 		r=0;
-		p=1;
+		var p=s+i+c;
 				$("#slider3").hide();
 				$("#slider6").hide();
 				$("#slider7").hide();
@@ -297,25 +299,25 @@ $(function() {
 				
 				    objS['x'+(p+1)] = (ptsS[p][0]);
 				    
-				    objS['y'+(p+1)] = (1-(ptsS[p][1]))*300+10;
+				    objS['y'+(p+1)] = (1-(ptsS[p][1]))*300+30;
 				}
 				for (var p=0; p<ptsR.length; p+=1) {
 				
 				    objR['x'+(p+1)] = (ptsR[p][0]);
 				    
-				    objR['y'+(p+1)] = (1-(ptsR[p][1]))*300+10;
+				    objR['y'+(p+1)] = (1-(ptsR[p][1]))*300+30;
 				}
 				for (var p=0; p<ptsC.length; p+=1) {
 				
 				    objC['x'+(p+1)] = (ptsC[p][0]);
 				    
-				    objC['y'+(p+1)] = (1-(ptsC[p][1]))*300+10;
+				    objC['y'+(p+1)] = (1-(ptsC[p][1]))*300+30;
 				}
 				for (var p=0; p<ptsP.length; p+=1) {
 				
 				    objP['x'+(p+1)] = (ptsP[p][0]);
 				    
-				    objP['y'+(p+1)] = (1-(ptsP[p][1]))*300+10;
+				    objP['y'+(p+1)] = (1-(ptsP[p][1]))*300+30;
 				}			
 				// Add the points from the array to the object
 				
@@ -323,7 +325,7 @@ $(function() {
 				
 					objI['x'+(p+1)] = ptsI[p][0];
 					
-					objI['y'+(p+1)] = (1-(ptsI[p][1]))*300+10;
+					objI['y'+(p+1)] = (1-(ptsI[p][1]))*300+30;
 					
 				}
 				$("#canvas1").drawLine(objS);
@@ -341,7 +343,7 @@ $(function() {
 				nu=slider6.slider("value");
 				mu=slider7.slider("value");
 				r=0;
-				p=1;
+		var p=s+i+c;
 				
 				$("#slider3").hide();
 				$("#slider6").hide();
@@ -391,25 +393,25 @@ $(function() {
 				
 				    objS['x'+(p+1)] = (ptsS[p][0]);
 				    
-				    objS['y'+(p+1)] = (1-(ptsS[p][1]))*300+10;
+				    objS['y'+(p+1)] = (1-(ptsS[p][1]))*300+30;
 				}
 				for (var p=0; p<ptsR.length; p+=1) {
 				
 				    objR['x'+(p+1)] = (ptsR[p][0]);
 				    
-				    objR['y'+(p+1)] = (1-(ptsR[p][1]))*300+10;
+				    objR['y'+(p+1)] = (1-(ptsR[p][1]))*300+30;
 				}
 				for (var p=0; p<ptsC.length; p+=1) {
 				
 				    objC['x'+(p+1)] = (ptsC[p][0]);
 				    
-				    objC['y'+(p+1)] = (1-(ptsC[p][1]))*300+10;
+				    objC['y'+(p+1)] = (1-(ptsC[p][1]))*300+30;
 				}
 				for (var p=0; p<ptsP.length; p+=1) {
 				
 				    objP['x'+(p+1)] = (ptsP[p][0]);
 				    
-				    objP['y'+(p+1)] = (1-(ptsP[p][1]))*300+10;
+				    objP['y'+(p+1)] = (1-(ptsP[p][1]))*300+30;
 				}			
 				// Add the points from the array to the object
 				
@@ -417,7 +419,7 @@ $(function() {
 				
 					objI['x'+(p+1)] = ptsI[p][0];
 					
-					objI['y'+(p+1)] = (1-(ptsI[p][1]))*300+10;
+					objI['y'+(p+1)] = (1-(ptsI[p][1]))*300+30;
 					
 				}
 				$("#canvas1").drawLine(objS);
@@ -435,7 +437,7 @@ $(function() {
 		nu=slider6.slider("value");
 		mu=slider7.slider("value");
 		r=0;
-		p=1;
+		var p=s+i+c;
 				$("#slider3").show();
 				$("#slider6").show();
 				$("#slider7").show();
@@ -485,31 +487,31 @@ $(function() {
 				
 				    objS['x'+(p+1)] = (ptsS[p][0]);
 				    
-				    objS['y'+(p+1)] = (1-(ptsS[p][1]))*300+10;
+				    objS['y'+(p+1)] = (1-(ptsS[p][1]))*300+30;
 				}
 				for (var p=0; p<ptsR.length; p+=1) {
 				
 				    objR['x'+(p+1)] = (ptsR[p][0]);
 				    
-				    objR['y'+(p+1)] = (1-(ptsR[p][1]))*300+10;
+				    objR['y'+(p+1)] = (1-(ptsR[p][1]))*300+30;
 				}
 				for (var p=0; p<ptsC.length; p+=1) {
 				
 				    objC['x'+(p+1)] = (ptsC[p][0]);
 				    
-				    objC['y'+(p+1)] = (1-(ptsC[p][1]))*300+10;
+				    objC['y'+(p+1)] = (1-(ptsC[p][1]))*300+30;
 				}
 				for (var p=0; p<ptsP.length; p+=1) {
 				
 				    objP['x'+(p+1)] = (ptsP[p][0]);
 				    
-				    objP['y'+(p+1)] = (1-(ptsP[p][1]))*300+10;
+				    objP['y'+(p+1)] = (1-(ptsP[p][1]))*300+30;
 				}							
 				for (var p=0; p<ptsI.length; p+=1) {
 				
 					objI['x'+(p+1)] = ptsI[p][0];
 					
-					objI['y'+(p+1)] = (1-(ptsI[p][1]))*300+10;
+					objI['y'+(p+1)] = (1-(ptsI[p][1]))*300+30;
 					
 				}
 				$("#canvas1").drawLine(objS);
@@ -521,55 +523,6 @@ $(function() {
 				
 			}	
 			
-			
-			
-			
-			
-		
-		
-				
-				/*for (var p=0; p<(pts2.length/2); p+=1) {
-					
-					objPP['x'+(p+1)] = 300*(pts2[2*p][1]/maxi_n);
-					objPP['y'+(p+1)] = 300*(pts[2*p][1]/maxi_p);
-					objPP['cx'+(p+1)] = 300*(pts2[2*p+1][1]/maxi_n);
-					objPP['cy'+(p+1)] = 300*(pts[2*p+1][1]/maxi_p);
-					
-				}*/
-				/*$("#canvas1").drawLine(objS);
-				$("#canvas1").drawLine(objI);
-				$("#canvas1").drawLine(objP);
-				$("#canvas1").drawLine(objR);
-				$("#canvas1").drawLine(objC);*/
-				
-	/*function choixDeMethode(){
-	
-			valeur=$("input[name=methode]:radio:checked").val();
-	
-			if(valeur=="1"){
-				
-				
-			}
-				else if(valeur=="2"){
-				$("#canvas1").drawLine(objS);
-				$("#canvas1").drawLine(objI);
-				$("#canvas1").drawLine(objP);
-				$("#canvas1").drawLine(objR);
-			}
-				else if(valeur=="3"){
-				$("#canvas1").drawLine(objS);
-				$("#canvas1").drawLine(objI);
-				$("#canvas1").drawLine(objP);
-				$("#canvas1").drawLine(objR);
-				$("#canvas1").drawLine(objC);
-			}	
-			else{
-				alert("Veuillez choisir une vitesse de défilement");
-				}
-				
-			}*/
-			//choixDeMethode();
-				// Draw the line
 		
 			}	
 				
@@ -588,26 +541,26 @@ $(function() {
 					strokeStyle: "black",
 				  strokeWidth: 1,
 				  rounded: true,
-				  x1: 1, y1: 10,
-				  x2: 10, y2: 10,}).drawText({
+				  x1: 1, y1: 30,
+				  x2: 10, y2: 30,}).drawText({
 				   fillStyle: "#9cf",
 				  strokeStyle: "black",
 				  strokeWidth: 1,
-				  x: 10, y: 10,
+				  x: 30, y: 10,
 				  fontSize: "10pt",
 				  fontFamily: "sans-serif",
-				  text: "1"});
+				  text: "  Population"});
 				 
 				  $("canvas").drawLine({
 					strokeStyle: "black",
 				  strokeWidth: 1,
 				  rounded: true,
-				  x1: 1, y1: 250,
-				  x2: 10, y2: 250,}).drawText({
+				  x1: 1, y1: 270,
+				  x2: 10, y2: 270,}).drawText({
 				   fillStyle: "#9cf",
 				  strokeStyle: "black",
 				  strokeWidth: 1,
-				  x: 10, y: 250,
+				  x: 10, y: 270,
 				  fontSize: "10pt",
 				  fontFamily: "sans-serif",
 				  text: "0.2"});
@@ -615,12 +568,12 @@ $(function() {
 					strokeStyle: "black",
 				  strokeWidth: 1,
 				  rounded: true,
-				  x1: 1, y1: 190,
-				  x2: 10, y2: 190,}).drawText({
+				  x1: 1, y1: 210,
+				  x2: 10, y2: 210,}).drawText({
 				   fillStyle: "#9cf",
 				  strokeStyle: "black",
 				  strokeWidth: 1,
-				  x: 10, y: 190,
+				  x: 10, y: 210,
 				  fontSize: "10pt",
 				  fontFamily: "sans-serif",
 				  text: "0.4"});
@@ -628,12 +581,12 @@ $(function() {
 					strokeStyle: "black",
 				  strokeWidth: 1,
 				  rounded: true,
-				  x1: 1, y1: 130,
-				  x2: 10, y2: 130,}).drawText({
+				  x1: 1, y1: 150,
+				  x2: 10, y2: 150,}).drawText({
 				   fillStyle: "#9cf",
 				  strokeStyle: "black",
 				  strokeWidth: 1,
-				  x: 10, y: 130,
+				  x: 10, y: 150,
 				  fontSize: "10pt",
 				  fontFamily: "sans-serif",
 				  text: "0.6"});
@@ -641,12 +594,12 @@ $(function() {
 					strokeStyle: "black",
 				  strokeWidth: 1,
 				  rounded: true,
-				  x1: 1, y1: 70,
-				  x2: 10, y2: 70,}).drawText({
+				  x1: 1, y1: 90,
+				  x2: 10, y2: 90,}).drawText({
 				   fillStyle: "#9cf",
 				  strokeStyle: "black",
 				  strokeWidth: 1,
-				  x: 10, y: 70,
+				  x: 10, y: 90,
 				  fontSize: "10pt",
 				  fontFamily: "sans-serif",
 				  text: "0.8"});
@@ -654,19 +607,19 @@ $(function() {
 					strokeStyle: "black",
 				  strokeWidth: 1,
 				  rounded: true,
-				  x1: 1, y1: 10,
-				  x2: 10, y2: 10,});
+				  x1: 1, y1: 30,
+				  x2: 10, y2: 30,});
 				  
 				  $("#canvas1").drawLine({
 					strokeStyle: "black",
 				  strokeWidth: 1,
 				  rounded: true,
-				  x1: 50, y1: 300,
-				  x2: 50, y2: 310,}).drawText({
+				  x1: 50, y1: 320,
+				  x2: 50, y2: 330,}).drawText({
 				   fillStyle: "#9cf",
 				  strokeStyle: "black",
 				  strokeWidth: 1,
-				  x: 60, y: 280,
+				  x: 60, y: 310,
 				  fontSize: "10pt",
 				  fontFamily: "sans-serif",
 				  text: "50"});
@@ -674,12 +627,12 @@ $(function() {
 					strokeStyle: "black",
 				  strokeWidth: 1,
 				  rounded: true,
-				  x1: 100, y1: 300,
-				  x2: 100, y2: 310,}).drawText({
+				  x1: 100, y1: 320,
+				  x2: 100, y2: 330,}).drawText({
 				   fillStyle: "#9cf",
 				  strokeStyle: "black",
 				  strokeWidth: 1,
-				  x: 110, y: 280,
+				  x: 110, y: 310,
 				  fontSize: "10pt",
 				  fontFamily: "sans-serif",
 				  text: "100"});
@@ -687,12 +640,12 @@ $(function() {
 					strokeStyle: "black",
 				  strokeWidth: 1,
 				  rounded: true,
-				  x1: 150, y1: 300,
-				  x2: 150, y2: 310,}).drawText({
+				  x1: 150, y1: 320,
+				  x2: 150, y2: 330,}).drawText({
 				   fillStyle: "#9cf",
 				  strokeStyle: "black",
 				  strokeWidth: 1,
-				  x: 160, y: 280,
+				  x: 160, y: 310,
 				  fontSize: "10pt",
 				  fontFamily: "sans-serif",
 				  text: "150"});
@@ -700,12 +653,12 @@ $(function() {
 					strokeStyle: "black",
 				  strokeWidth: 1,
 				  rounded: true,
-				  x1: 200, y1: 300,
-				  x2: 200, y2: 310,}).drawText({
+				  x1: 200, y1: 320,
+				  x2: 200, y2: 330,}).drawText({
 				   fillStyle: "#9cf",
 				  strokeStyle: "black",
 				  strokeWidth: 1,
-				  x: 210, y: 280,
+				  x: 210, y: 310,
 				  fontSize: "10pt",
 				  fontFamily: "sans-serif",
 				  text: "200"});
@@ -713,12 +666,12 @@ $(function() {
 					strokeStyle: "black",
 				  strokeWidth: 1,
 				  rounded: true,
-				  x1: 250, y1: 300,
-				  x2: 250, y2: 310,}).drawText({
+				  x1: 250, y1: 320,
+				  x2: 250, y2: 330,}).drawText({
 				   fillStyle: "#9cf",
 				  strokeStyle: "black",
 				  strokeWidth: 1,
-				  x: 260, y: 280,
+				  x: 260, y: 310,
 				  fontSize: "10pt",
 				  fontFamily: "sans-serif",
 				  text: "250"});
@@ -726,12 +679,12 @@ $(function() {
 					strokeStyle: "black",
 				  strokeWidth: 1,
 				  rounded: true,
-				  x1: 300, y1: 300,
-				  x2: 300, y2: 310,}).drawText({
+				  x1: 300, y1: 320,
+				  x2: 300, y2: 330,}).drawText({
 				   fillStyle: "#9cf",
 				  strokeStyle: "black",
 				  strokeWidth: 1,
-				  x: 310, y: 280,
+				  x: 310, y: 310,
 				  fontSize: "10pt",
 				  fontFamily: "sans-serif",
 				  text: "300"});
@@ -739,12 +692,12 @@ $(function() {
 					strokeStyle: "black",
 				  strokeWidth: 1,
 				  rounded: true,
-				  x1: 350, y1: 300,
-				  x2: 350, y2: 310,}).drawText({
+				  x1: 350, y1: 320,
+				  x2: 350, y2: 330,}).drawText({
 				   fillStyle: "#9cf",
 				  strokeStyle: "black",
 				  strokeWidth: 1,
-				  x: 360, y: 280,
+				  x: 360, y: 310,
 				  fontSize: "10pt",
 				  fontFamily: "sans-serif",
 				  text: "350"});
@@ -752,12 +705,12 @@ $(function() {
 					strokeStyle: "black",
 				  strokeWidth: 1,
 				  rounded: true,
-				  x1: 400, y1: 300,
-				  x2: 400, y2: 310,}).drawText({
+				  x1: 400, y1: 320,
+				  x2: 400, y2: 330,}).drawText({
 				   fillStyle: "#9cf",
 				  strokeStyle: "black",
 				  strokeWidth: 1,
-				  x: 410, y: 280,
+				  x: 410, y: 310,
 				  fontSize: "10pt",
 				  fontFamily: "sans-serif",
 				  text: "400"});
@@ -765,25 +718,25 @@ $(function() {
 					strokeStyle: "black",
 				  strokeWidth: 1,
 				  rounded: true,
-				  x1: 450, y1: 300,
-				  x2: 450, y2: 310,}).drawText({
+				  x1: 450, y1: 320,
+				  x2: 450, y2: 330,}).drawText({
 				   fillStyle: "#9cf",
 				  strokeStyle: "black",
 				  strokeWidth: 1,
-				  x: 460, y: 280,
+				  x: 460, y: 310,
 				  fontSize: "10pt",
 				  fontFamily: "sans-serif",
 				  text: "450"}).drawText({
 				   fillStyle: "#9cf",
 				  strokeStyle: "black",
 				  strokeWidth: 1,
-				  x: 490, y: 280,
+				  x: 490, y: 310,
 				  fontSize: "10pt",
 				  fontFamily: "sans-serif",
 				  text: "t"});
 				  $("canvas").drawImage({
-				  source: "legende.png",
-				  x: 350, y: 10,
+				  source: "img/legende.png",
+				  x: 350, y: 5,
 				  width: 150,
 				  height: 60,
 				  fromCenter: false
@@ -791,14 +744,13 @@ $(function() {
 				  }
 				  dessinerAxes();
 				  
-	$("#valid").on('click',calculer);
-	$("#SIRsansµ").on('click',function(){$("#slider3").hide();
+	$("#valid").on('click',function(){effacer();calculer()});
+	$("#SIRsansµ").on('click',function(){$("#slider3").hide();$("#valeur3").hide();$("#valeur6").hide();$("#valeur7").hide();
 				$("#slider6").hide();
 				$("#slider7").hide();});
-	$("#SIRavecµ").on('click',function(){$("#slider3").hide();
-				$("#slider6").hide();
+	$("#SIRavecµ").on('click',function(){$("#slider3").hide();$("#valeur3").hide();$("#valeur6").hide();$("#valeur7").show()
 				$("#slider7").show();});
-	$("#SIRC").on('click',function(){$("#slider3").show();
+	$("#SIRC").on('click',function(){$("#slider3").show();$("#valeur3").show();$("#valeur6").show();$("#valeur7").show();
 				$("#slider6").show();
 				$("#slider7").show();});
 	

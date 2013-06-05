@@ -1,56 +1,68 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
-	<title>Rubik's Cube 2x2x2</title>
-	<meta charset="utf-8">
+  <meta charset="utf-8"/>
+  <title>Modélisation épidémie</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="vendor/jquery-1.9.1.js"></script>
+  <script src="vendor/jquery-ui.js"></script>
+  <script src="vendor/jcanvas.js"></script>
+  <script src="js/epidemie.js"></script>
 </head>
-
-<style>
-		.moves_list {
-			width::100%;
-			margin:auto;
-		}
-		
-		.moves_list td {
-			width:1%;
-			text-align:center;
-			background-color:#d0d0d7;
-			border-width:1px;
-			border-style:solid;
-			border-color:#bbbbc6;
-			cursor:pointer;
-		}
-		
-		.queue {
-			width:100%;
-			background-color:#d0d0d7;
-			border-width:1px;
-			border-style:solid;
-			border-color:#bbbbc6;
-			height:25px;
-			text-align:center;
-		}
-		
-		.rubik_title {
-			font-weight:bold;
-			text-align:center;
-		}
-		
-		#webGL_error {
-			width:100%;
-			color:red;
-			text-align:center;
-		}
-	</style>
-	
 <body>
-  <h3> Toutes les formes du grain:</h3>
-<table align="center">
-
-<tr><td><h2><a href="">Première démonstration</a></h2></td></tr>
-<tr><td><h2><a href="epidemie (2).html">Deuxième démonstration</a></h2></td></tr>
-<tr><td><h2><a href="">Troisième démonstration</a></h2></td></tr>
-<tr><td><h2><a href="index.html">Page complète</a></h2></td></tr>
-
-</table></body>
+<canvas id="canvas1" width="500" height="330" style="border : 1px solid black">
+	
+ </canvas>
+ 
+<section>
+	<fieldset>
+		<legend>S<sub>0</sub></legend>
+		<div id="slider1" class="slider"></div>
+			
+		<span class="valeur" id="valeur1"></span>
+	</fieldset>
+	<fieldset>
+		<legend>I<sub>0</sub></legend>
+		<div id="slider2" class="slider"></div>
+		<span class="valeur" id="valeur2"></span>
+	</fieldset>
+	<fieldset>
+		<legend>C<sub>0</sub></legend>
+		<div id="slider3" class="slider"></div>
+		<span class="valeur" id="valeur3"></span>
+	</fieldset>
+</section>
+<section>
+	<fieldset>
+		<legend>&lambda;</legend>
+		<div id="slider4" class="slider"></div>
+		<span class="valeur" id="valeur4"></span>
+	</fieldset>
+	<fieldset>
+		<legend>&beta;</legend>
+		<div id="slider5" class="slider"></div>
+		<span class="valeur" id="valeur5"></span>
+	</fieldset>
+	<fieldset>
+		<legend>&nu;</legend>
+		<div id="slider6" class="slider"></div>
+		<span class="valeur" id="valeur6"></span>
+	</fieldset>
+</section>
+<section>
+	<fieldset>
+		<legend>µ</legend>
+		<div id="slider7" class="slider"></div>
+		<span class="valeur" id="valeur7"></span>
+	</fieldset>
+</section>
+<fieldset>
+	<legend>Choississez les courbes à afficher</legend>
+		<input type="button"  id="valid" value="Lancer la simulation"></input>
+		<input type="radio"  name="methode"id="SIRsansµ" checked="checked" value="1">S,I,R sans µ</input>
+		<input type="radio" name="methode" id="SIRavecµ" value="2">S,I,R avec µ</input>
+		<input type="radio" name="methode" id="SIRC" value="3">S,I,R et C</input>
+	</fieldset>
+ 
+</body>
 </html>
