@@ -1,6 +1,6 @@
 {
     "name": "Simulation épidémiologique",
-    "width": "800px",
+    "width": "1000px",
     "height": "600px",
     "link": "http://interstices.info/modele-sir",
     "comment": "Simulation d'un modèle de propagation d'épidémie",
