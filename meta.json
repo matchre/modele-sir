@@ -1,6 +1,6 @@
 {
-    "name": "Grain 3.0",
-    "width": "800px",
+    "name": "Simulation épidémiologique",
+    "width": "1200px",
     "height": "600px",
     "link": "http://interstices.info/modele-sir",
     "comment": "Simulation d'un modèle de propagation d'épidémie",
