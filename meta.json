@@ -3,7 +3,7 @@
     "width": "800px",
     "height": "600px",
     "link": "http://interstices.info/modele-sir",
-    "comment": "---une ligne de description du grain--",
+    "comment": "Simulation d'un modèle de propagation d'épidémie",
     "links": [
         {
             "title": "Document qui document ce grain",
